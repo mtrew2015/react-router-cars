@@ -21,17 +21,23 @@ function Landing({ cars, setCars }) {
         setFiltered(fil)
     }
 	return (
-        <div className="car-section">
+        <div  className="wrapper">
+        <div className="search-bar-section">
         <form onSubmit={(e) => submitHandler(e)}>
         <input name="search" placeholder="Enter A Model" onChange={(e) => setInput(e.target.value) }/>
-        <button>Search</button>
+        <button className="search-button">Search</button>
+        <button className="clear-filters" onClick={() => setFiltered(cars)}>Clear Filters</button>
+         <Link className="add" to="/add">Add New Car</Link>
         </form>
-        <button onClick={() => setFiltered(cars)}>Clear Filters</button>
         
-        <Link to="/add">Add A New Car To Inventory</Link>
+        </div>
+        <div className="car-section">
+       
+        
 			{filtered.map((car) => {
                 return <Link key={car.id} to={`/cars/${car.id}`}><Card car={car}/></Link>
             })}
+        </div>
 		</div>
 	);
 }
