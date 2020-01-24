@@ -1,0 +1,13 @@
+.car-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+a {
+	border: 2px solid black;
+	width: 25%;
+	margin: 2% 0;
+	text-decoration: none;
+	color: inherit;
+}

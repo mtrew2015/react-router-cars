@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    width: 100%;
+    h1{
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    align-items: center;
+    
+}
+
