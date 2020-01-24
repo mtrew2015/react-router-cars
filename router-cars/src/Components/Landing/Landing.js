@@ -26,7 +26,7 @@ function Landing({ cars, setCars }) {
         <form onSubmit={(e) => submitHandler(e)}>
         <input name="search" placeholder="Enter A Model" onChange={(e) => setInput(e.target.value) }/>
         <button className="search-button">Search</button>
-        <button className="clear-filters" onClick={() => setFiltered(cars)}>Clear Filters</button>
+        <button className="clear-filters" onClick={(e) => {e.preventDefault() ;setFiltered(cars)}}>Clear Filters</button>
          <Link className="add" to="/add">Add New Car</Link>
         </form>
         
