@@ -1,4 +1,9 @@
 .card{
+    img{
+        width: 85%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,12 +12,14 @@
     background-color: white;
     border-radius: 10px;
     
-
+    .price{
+        color: green
+    }
     h1{
         font-size: 1.6rem;
     }
     p{
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     align-items: center;
     
