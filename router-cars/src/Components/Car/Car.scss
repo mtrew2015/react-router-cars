@@ -1,3 +1,10 @@
+/* RGB */
+$color1: rgba(11, 19, 43, 1);
+$color2: rgba(11, 79, 108, 1);
+$color3: rgba(25, 114, 120, 1);
+$color4: rgba(249, 222, 201, 1);
+$color5: rgba(196, 69, 54, 1);
+
 .car-container{
  display: flex;
  width: 100%;
@@ -12,16 +19,19 @@
      align-items: center;
      justify-content: center;
      width: 25%;
-     height: 100vh;
-     border: 2px solid red;
- }
+    height: 45vh;
+    background-color: white;
+}
+
 
 
  .car{
+     line-height: 1.25;
+     padding-bottom: 15px;
    img{
         width: 85%;
         height: 300px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     display: flex;
     flex-direction: column;
@@ -32,13 +42,20 @@
     border-radius: 10px;
     
     .price{
-        color: green
+        color: $color3
     }
     h1{
-        font-size: 1.6rem;
+        font-size: 2.6rem;
+        color: $color3;
+    }
+    h2{
+        font-size: 1.8rem;
+        color: $color2;
     }
     p{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        color: $color2;
     }
     align-items: center;
 }
+

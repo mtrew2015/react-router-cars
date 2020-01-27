@@ -9,7 +9,7 @@ import photo from '../../Assets/coming-soon-2550190_1280.jpg'
     return (
         <div className="card" >
             <h1>{car.make}</h1>
-            <p>{car.model}</p>
+            <h2>{car.model}</h2>
             <img src={photo}></img>
 
             <p>VIP Price: <span className="price">${car.price.toLocaleString()}</span></p>

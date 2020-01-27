@@ -3,7 +3,7 @@ import './Car.scss';
 import { useParams } from 'react-router-dom';
 import './Car.scss';
 import photo from '../../Assets/coming-soon-2550190_1280.jpg';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import SkeletonLoader from 'tiny-skeleton-loader-react';
 
 function Car({ cars, setCars }) {
 	const { id } = useParams();
@@ -19,7 +19,7 @@ function Car({ cars, setCars }) {
 				return car.id == id;
 			});
 			setCar(actualCar[0]);
-		}, 2500);
+		}, 1500);
 	}, []);
 
 	console.log(car, 'car');
@@ -27,11 +27,12 @@ function Car({ cars, setCars }) {
 	if (!car || !car.price) {
 		return (
 			<div className='car-container'>
-				<div className='car'>
-					{<Skeleton className='car' height={100} width={400} />}
-					{<Skeleton className='car' height={100} width={400} />}
-					{<Skeleton className='car' height={100} width={400} />}
-					{<Skeleton className='car' height={100} width={400} />}
+				<div className='loading'>
+                    <SkeletonLoader style={{marginBottom:"5px"}} height='8%' />
+                    <SkeletonLoader style={{marginBottom:"5px"}}  height='8%' />
+                    <SkeletonLoader style={{marginBottom:"5px"}} height='74%' />
+                    
+                    <SkeletonLoader height='10%' />
 				</div>
 			</div>
 		);
@@ -40,7 +41,7 @@ function Car({ cars, setCars }) {
 		<div className='car-container'>
 			<div className='car'>
 				<h1>{car.make}</h1>
-				<p>{car.model}</p>
+				<h2>{car.model}</h2>
 				<img src={photo} />
 				<p>
 					VIP Price: <span className='price'>${car.price.toLocaleString()}</span>
