@@ -1,3 +1,5 @@
+
+
 export const data = [{"id":"d7baa1b0-8371-4379-9145-361033f0645e","make":"Chevrolet","model":"Silverado 2500","miles":78179,"year":2003,"price":36894,"vin":"WAUDFBFC0CN421623","color":"Purple"},
 {"id":"bf7b25e9-725f-4fd7-9079-1907f1528ff5","make":"GMC","model":"Yukon XL","miles":59064,"year":2006,"price":35093,"vin":"KM8JT3AF5EU175517","color":"Purple"},
 {"id":"267018ea-2f83-4c0d-b1fe-346ba9dbe942","make":"Mercedes-Benz","model":"C-Class","miles":56488,"year":1994,"price":33210,"vin":"1G6DS1E3XD0048618","color":"Puce"},
