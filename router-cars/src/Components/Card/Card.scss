@@ -1,4 +1,17 @@
+$color1: rgba(11, 19, 43, 1);
+$color2: rgba(11, 79, 108, 1);
+$color3: rgba(25, 114, 120, 1);
+$color4: rgba(249, 222, 201, 1);
+$color5: rgba(196, 69, 54, 1);
+
 .card{
+    line-height: 1.25;
+    padding-bottom: 15px;
+    img{
+        width: 85%;
+        height: 300px;
+        margin-bottom: 15px;
+    }
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,12 +20,20 @@
     background-color: white;
     border-radius: 10px;
     
-
+    .price{
+        color:$color3;
+    }
     h1{
-        font-size: 1.6rem;
+        font-size: 2.6rem;
+        color: $color3
+    }
+      h2{
+        font-size: 1.8rem;
+        color: $color2;
     }
     p{
-        font-size: 1.1rem;
+        font-size: 1.8rem;
+        color: $color2;
     }
     align-items: center;
     
