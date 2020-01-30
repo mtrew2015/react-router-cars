@@ -5,12 +5,16 @@ import { Route } from 'react-router-dom';
 import Landing from './Components/Landing/Landing';
 import Form from './Components/Form/Form';
 import Car from './Components/Car/Car';
+import {server} from './axios';
 
 function App() {
-	const [ cars, setCars ] = useState([]);
+    const [ cars, setCars ] = useState([]);
+    
+ 
 
 	useEffect(() => {
-		setCars(data);
+        server.get('/cars')
+        .then(res => console.log(res))
 	}, []);
 
 	return (
