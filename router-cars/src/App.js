@@ -14,7 +14,7 @@ function App() {
 
 	useEffect(() => {
         server.get('/cars')
-        .then(res => console.log(res))
+        .then(res => setCars(res.data))
 	}, []);
 
 	return (
